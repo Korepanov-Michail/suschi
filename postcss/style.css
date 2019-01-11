@@ -1,0 +1,149 @@
+html,
+body {
+  margin: 0;
+  font-size: 16px;
+  background: #050;
+}
+
+nav ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 24px;
+  font-family: sans-serif;
+  color: #0f5;
+}
+
+li {
+  background-color: #05a;
+  width: 111px;
+}
+
+.menu li {
+  float: right;
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+.menu_top_common {
+  display: none;
+  position: absolute;
+  top: 42px;
+}
+
+.menu_top_common li {
+  height: 33px;
+  float: none;
+  display: block;
+  border-color: #0f5;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 2px;
+  border-bottom: 0px;
+  border-style: solid;
+  width: 111px;
+}
+
+.menu_common {
+  display: none;
+  position: relative;
+  top: -38px;
+  margin-bottom: 28px;
+  margin-left: -15px;
+  right: 147px;
+}
+
+.menu_common li {
+  height: 33px;
+  float: none;
+  display: block;
+  border-color: #0f5;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 2px;
+  border-bottom: 0px;
+  border-style: solid;
+  width: 111px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+nav .wrapper {
+  max-width: 824px;
+  padding: 0 30px;
+  margin: 0 auto;
+  position: relative;
+}
+
+nav {
+  position: relative;
+  top: 9px;
+  background: #0dd;
+  height: 42px;
+}
+
+.vlogenia span {
+  float: right;
+  font-size: 22px;
+}
+
+.menuToggle {
+  padding: 10px 15px;
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+  .menu {
+    display: none;
+    position: absolute;
+  }
+
+  .menu li {
+    float: none;
+    display: block;
+    border-color: #0f5;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 2px;
+    border-bottom: 0px;
+    border-style: solid;
+    width: 222px;
+  }
+
+  .menuToggle {
+    display: inline-block;
+    float: right;
+  }
+
+  .menu_top_common {
+    position: relative;
+    top: 28px;
+    margin-bottom: 18px;
+    margin-left: -16px;
+    margin-top: -13px;
+  }
+
+  .menu_top_common li {
+    height: auto;
+  }
+
+  .menu_common {
+    height: auto;
+    right: 0px;
+    top: 28px;
+    margin-bottom: 18px;
+    margin-left: -16px;
+    margin-top: -13px;
+  }
+
+  .menu_top_common li {
+    float: none;
+    display: block;
+  }
+}
